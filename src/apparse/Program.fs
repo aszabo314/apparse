@@ -56,6 +56,9 @@ let main argv =
 
     let pointCloud = Aardvark.Geometry.Points.PointCloud.Chunks(chunks,cfg)
 
+    // parser is selected automatically based on file extension
+    let pointCloud = Aardvark.Geometry.Points.PointCloud.Import(@"C:\bla\pts\lowergetikum 20230321.e57",cfg)
+
     // Example operations on a point cloud
     let filtered = FilteredNode.Create(pointCloud.Root.Value, FilterClassification(42uy))
     let queried = Queries.QueryPointsInsideBox(filtered, Box3d.Unit)
