@@ -54,9 +54,13 @@ let main argv =
             .WithInMemoryStore()
             .WithKey("points")
 
+    // point cloud from custom chunks
     let pointCloud = Aardvark.Geometry.Points.PointCloud.Chunks(chunks,cfg)
 
-    // parser is selected automatically based on file extension
+    // point cloud from already-imported data
+    let pointCloud = Aardvark.Geometry.Points.PointCloud.Load("points",PointCloud.OpenStore(@"C:\temp\teststore", LruDictionary(1L <<< 30)))
+
+    // point cloud from file parse: parser is selected automatically based on file extension
     let pointCloud = Aardvark.Geometry.Points.PointCloud.Import(@"C:\bla\pts\lowergetikum 20230321.e57",cfg)
 
     // Example operations on a point cloud
