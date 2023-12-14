@@ -1,0 +1,12 @@
+FSharp.Core
+
+FSharp.Data.Adaptive
+Aardvark.Base
+Aardvark.Base.FSharp
+
+Aardvark.Data.E57           
+Aardvark.Data.Points.LasZip 
+Aardvark.Data.Points.Ply    
+Aardvark.Data.Points.Ascii  
+Aardvark.Data.Points.Base   
+Aardvark.Geometry.PointSet

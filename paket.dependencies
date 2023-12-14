@@ -1,0 +1,17 @@
+source https://api.nuget.org/v3/index.json
+framework: auto-detect
+storage: none
+
+nuget FSharp.Core                 >= 5.0.1
+     
+nuget Aardvark.Base               ~> 5.2.14
+nuget Aardvark.Base.FSharp        ~> 5.2.14
+
+nuget FSharp.Data.Adaptive        ~> 1.2.14
+
+nuget Aardvark.Data.E57           ~> 5.2.28
+nuget Aardvark.Data.Points.LasZip ~> 5.2.28
+nuget Aardvark.Data.Points.Ply    ~> 5.2.28
+nuget Aardvark.Data.Points.Ascii  ~> 5.2.28
+nuget Aardvark.Data.Points.Base   ~> 5.2.28
+nuget Aardvark.Geometry.PointSet  ~> 5.2.28
